@@ -22,12 +22,13 @@ const Myorder = ({ order }) => {
           .then((data) => {
             if (data.deletedCount) {
               Swal.fire("Canceled!", "", "success");
-              window.location.reload();
+              // window.location.reload();
             }
           });
       }
     });
   };
+  console.log(status.status);
   return (
     <div className="col-md-12 my-order-details">
       <div>
@@ -53,6 +54,7 @@ const Myorder = ({ order }) => {
           </div>
           <div>
             <button
+              disabled={status.status === "Shipped" ? true : false}
               className="order-cancel-btn"
               onClick={() => handleDelete(_id)}
             >

@@ -7,7 +7,7 @@ const Reviews = () => {
     fetch("https://young-shore-30046.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
-  }, []);
+  }, [reviews]);
 
   return (
     <div className="managereview-sec">

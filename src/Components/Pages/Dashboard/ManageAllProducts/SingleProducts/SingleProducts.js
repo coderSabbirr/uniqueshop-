@@ -20,7 +20,6 @@ const SingleProducts = ({ product }) => {
           .then((data) => {
             if (data.deletedCount) {
               Swal.fire("Deleted!", "", "success");
-              window.location.reload();
             }
           });
       }

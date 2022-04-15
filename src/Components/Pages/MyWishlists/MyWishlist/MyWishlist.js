@@ -12,9 +12,7 @@ const MyWishlist = ({ Wishlist }) => {
       method: "DELETE",
     })
       .then((res) => res.json())
-      .then((data) => {
-        window.location.reload();
-      });
+      .then((data) => {});
   };
   return (
     <div className="wishlist">

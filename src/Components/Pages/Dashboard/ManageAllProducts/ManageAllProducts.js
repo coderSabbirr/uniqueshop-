@@ -7,7 +7,7 @@ const ManageAllProducts = () => {
     fetch("https://young-shore-30046.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setMaganeProduct(data));
-  }, []);
+  }, [manageProduct]);
   console.log(manageProduct);
   return (
     <div className="" style={{ backgroundColor: "#EFF0F5" }}>

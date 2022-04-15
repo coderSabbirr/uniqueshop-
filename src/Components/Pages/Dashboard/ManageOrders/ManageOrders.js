@@ -9,7 +9,7 @@ const ManageOrders = () => {
     fetch("https://young-shore-30046.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
-  }, []);
+  }, [orders]);
 
   return (
     <div className="manageorder">

@@ -16,7 +16,7 @@ const MyWishlists = () => {
       .then((res) => res.json())
       .then((data) => setWishlists(data))
       .finally(() => setIsLoading(false));
-  }, [user]);
+  }, [Wishlists]);
   if (isloading) {
     return <Spinner />;
   } else {

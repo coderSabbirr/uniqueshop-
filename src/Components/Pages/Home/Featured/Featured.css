@@ -54,7 +54,7 @@
 .text .Product-buy-btn {
   background-color: white;
   border-radius: 25px;
-  padding: 5px 10px 7px 10px;
+  padding: 5px 0;
   margin-top: 5px;
 }
 .text .Product-view-btn a {

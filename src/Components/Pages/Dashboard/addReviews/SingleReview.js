@@ -9,11 +9,9 @@ const SingleReview = ({ review }) => {
       method: "DELETE",
     })
       .then((res) => res.json())
-      .then((data) => {
-        console.log(_id);
-      });
+      .then((data) => {});
   };
-  console.log(_id);
+
   return (
     <div className="prodcuts-details-manage col-md-3">
       <div className="my-order-title">

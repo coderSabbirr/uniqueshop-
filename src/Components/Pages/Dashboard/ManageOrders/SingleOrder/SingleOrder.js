@@ -22,7 +22,6 @@ const SingleOrder = ({ order }) => {
           .then((data) => {
             if (data.deletedCount) {
               Swal.fire("Deleted!", "", "success");
-              window.location.reload();
             }
           });
       }
@@ -45,7 +44,6 @@ const SingleOrder = ({ order }) => {
       .then((data) => {
         if (data.modifiedCount > 0) {
           Swal.fire("Updated!", "", "Success");
-          window.location.reload();
         }
       });
   };

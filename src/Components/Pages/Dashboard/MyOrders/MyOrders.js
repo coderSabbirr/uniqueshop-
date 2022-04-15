@@ -11,8 +11,7 @@ const MyOrders = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrders(data));
-  }, [user]);
-  console.log(orders.length);
+  }, [orders]);
   return (
     <div className="myorder">
       <h1 className="heading" style={{ backgroundColor: "#FCF6F6" }}>
