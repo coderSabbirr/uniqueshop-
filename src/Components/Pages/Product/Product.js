@@ -9,7 +9,7 @@ const Product = () => {
   const [displayProduct, setDisplayProduct] = useState([]);
 
   useEffect(() => {
-    fetch("https://young-shore-30046.herokuapp.com/products")
+    fetch("https://uniqueshop.onrender.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

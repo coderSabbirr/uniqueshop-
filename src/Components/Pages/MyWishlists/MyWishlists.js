@@ -11,7 +11,7 @@ const MyWishlists = () => {
   const [Wishlists, setWishlists] = useState([]);
   const [isloading, setIsLoading] = useState(true);
   useEffect(() => {
-    const url = `https://young-shore-30046.herokuapp.com/wishlist/${user.email}`;
+    const url = `https://uniqueshop.onrender.com/wishlist/${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setWishlists(data))

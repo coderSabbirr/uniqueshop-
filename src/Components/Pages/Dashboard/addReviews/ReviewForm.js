@@ -19,7 +19,7 @@ const ReviewForm = () => {
   const onSubmit = (data) => {
     data.name = user.displayName;
     data.email = user.email;
-    fetch("https://young-shore-30046.herokuapp.com/reviews", {
+    fetch("https://uniqueshop.onrender.com/reviews", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

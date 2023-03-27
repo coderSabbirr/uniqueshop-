@@ -7,7 +7,7 @@ const MyOrders = () => {
   const { user } = useAuth();
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    const url = `https://young-shore-30046.herokuapp.com/orders/${user.email}`;
+    const url = `https://uniqueshop.onrender.com/orders/${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setOrders(data));

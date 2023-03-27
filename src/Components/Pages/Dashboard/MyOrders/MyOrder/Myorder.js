@@ -14,7 +14,7 @@ const Myorder = ({ order }) => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `https://young-shore-30046.herokuapp.com/orders/${_id}`;
+        const url = `https://uniqueshop.onrender.com/orders/${_id}`;
         fetch(url, {
           method: "DELETE",
         })

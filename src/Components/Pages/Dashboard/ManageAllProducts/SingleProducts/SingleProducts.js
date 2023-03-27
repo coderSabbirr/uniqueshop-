@@ -12,7 +12,7 @@ const SingleProducts = ({ product }) => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `https://young-shore-30046.herokuapp.com/products/${_id}`;
+        const url = `https://uniqueshop.onrender.com/products/${_id}`;
         fetch(url, {
           method: "DELETE",
         })

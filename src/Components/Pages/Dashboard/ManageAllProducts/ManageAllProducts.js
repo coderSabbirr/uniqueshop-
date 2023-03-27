@@ -4,7 +4,7 @@ import SingleProducts from "./SingleProducts/SingleProducts";
 const ManageAllProducts = () => {
   const [manageProduct, setMaganeProduct] = useState([]);
   useEffect(() => {
-    fetch("https://young-shore-30046.herokuapp.com/products")
+    fetch("https://uniqueshop.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setMaganeProduct(data));
   }, [manageProduct]);

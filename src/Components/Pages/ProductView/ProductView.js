@@ -24,7 +24,7 @@ const ProductView = () => {
   const [isloading, setIsLoading] = useState(true);
   const sharelink = `https://unique-online-shop.web.app${location.pathname}`;
   useEffect(() => {
-    const url = `https://young-shore-30046.herokuapp.com/products/${productId}`;
+    const url = `https://uniqueshop.onrender.com/products/${productId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProduct(data))
@@ -40,7 +40,7 @@ const ProductView = () => {
       product_deatils: product,
     };
 
-    fetch("https://young-shore-30046.herokuapp.com/wishlist", {
+    fetch("https://uniqueshop.onrender.com/wishlist", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(databody),
@@ -82,9 +82,20 @@ const ProductView = () => {
               >
                 <i className="far fa-heart"></i>
               </button>
-              <p className="product-description">
+              {/* <p className="product-description">
                 {desc1 + desc2 + desc3 + desc4}
-              </p>
+              </p> */}
+
+              <div className="text-dark mt-4">
+                <p>. {desc1}</p>
+
+                <p>. {desc2}</p>
+
+                <p>. {desc3}</p>
+
+                <p>. {desc4}</p>
+              </div>
+
               <div className="produt-btn">
                 <Link to={`/buyProducts/${_id}`}>
                   <button className="buy-now-btn">BUY</button>

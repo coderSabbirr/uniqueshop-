@@ -6,7 +6,7 @@ const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("https://young-shore-30046.herokuapp.com/orders")
+    fetch("https://uniqueshop.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);

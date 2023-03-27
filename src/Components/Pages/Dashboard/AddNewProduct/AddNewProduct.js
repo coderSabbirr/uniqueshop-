@@ -15,7 +15,7 @@ const AddNewProduct = () => {
     formData.append("image", image);
     console.log(data);
 
-    fetch("https://young-shore-30046.herokuapp.com/products", {
+    fetch("https://uniqueshop.onrender.com/products", {
       method: "POST",
       body: formData,
     })

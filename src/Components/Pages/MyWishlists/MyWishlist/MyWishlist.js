@@ -7,7 +7,7 @@ const MyWishlist = ({ Wishlist }) => {
   const wishlistproductId = Wishlist.product_deatils._id;
 
   const handleDelete = () => {
-    const url = `https://young-shore-30046.herokuapp.com/wishlist/${_id}`;
+    const url = `https://uniqueshop.onrender.com/wishlist/${_id}`;
     fetch(url, {
       method: "DELETE",
     })
